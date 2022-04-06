@@ -10,6 +10,7 @@ source "$HOME/.cargo/env"
 
 [ -s "$HOME/.aliasrc"  ] && source "$HOME/.aliasrc"
 [ -s "$HOME/.pathrc"  ] && source "$HOME/.pathrc"
+[ -s "$HOME/.secret.aliasrc" ] && source "$HOME/.secret.aliasrc"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
