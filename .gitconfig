@@ -1,0 +1,6 @@
+[user]
+	name = Ephemeral Astronaut
+	email = troglodytto@gmail.com
+
+[init]
+	defaultBranch = main
