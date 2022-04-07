@@ -1,7 +1,6 @@
 set number
 call plug#begin()
 
-
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'mhinz/vim-crates'
@@ -9,25 +8,19 @@ if has('nvim')
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
   Plug 'preservim/nerdtree'
+  Plug 'sonph/onehalf', { 'rtp': 'vim' }
+  Plug 'pangloss/vim-javascript'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'sbdchd/neoformat'
+  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'cespare/vim-toml'
+  Plug 'stephpy/vim-yaml'
+  Plug 'rust-lang/rust.vim'
+  Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh' }
 endif
 
-
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'sbdchd/neoformat'
-Plug 'peitalin/vim-jsx-typescript'
-Plug 'cespare/vim-toml'
-Plug 'stephpy/vim-yaml'
-Plug 'rust-lang/rust.vim'
-
-Plug 'autozimu/LanguageClient-neovim', {
-\ 'branch': 'next',
-\ 'do': 'bash install.sh',
-\ }
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['rust-analyzer'],
-\ }
+let g:LanguageClient_serverCommands = { 'rust': ['rust-analyzer'] }
 
 let g:neoformat_try_node_exe = 1
 autocmd BufWritePre,InsertLeave *.js *.ts *.tsx *.jsx *.html *.css Neoformat
@@ -42,7 +35,6 @@ highlight Crates ctermfg=green ctermbg=NONE cterm=NONE
 " or link it to another highlight group
 highlight link Crates WarningMsg
 
-
 " Configure deoplete
 let g:deoplete#enable_at_startup = 1
 
@@ -53,6 +45,8 @@ nmap <leader>n :NERDTreeFocus<CR>
 nmap <C-n> :NERDTree<CR>
 nmap <C-t> :NERDTreeToggle<CR>
 nmap <C-f> :NERDTreeFind<CR>
+nmap <C-s> :w<CR>
+nmap <C-m> :CratesUp<CR>
 " Or map each action separately
 " nmap <silent> <F2> <Plug>(lcn-rename)
 autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)

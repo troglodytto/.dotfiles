@@ -96,21 +96,10 @@ window:
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 0
+  history: 1000
 
-  # Scrolling distance multiplier.
-  #multiplier: 3
-
-# Font configuration
 font:
-  # Normal (roman) font face
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
     family: "Jetbrains Mono"
 
     # The `style` can be specified to pick a specific face.
@@ -173,151 +162,108 @@ font:
   #use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
-#draw_bold_text_with_bright_colors: false
+# draw_bold_text_with_bright_colors: false
 
-# Base16 Gruvbox dark, hard 256 - alacritty color config
-# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-colors:
-  # Default colors
-  primary:
-    background: "#1d2021"
-    foreground: "#d5c4a1"
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night # Default colors
+    primary:
+      background: "0x1a1b26"
+      foreground: "0xa9b1d6"
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not
-    # present. If the bright foreground color is not set, or
-    # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
-    # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+    # Normal colors
+    normal:
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x787c99"
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  cursor:
-    text: "#1d2021"
-    cursor: "#d5c4a1"
+    # Bright colors
+    bright:
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 
-  # Vi mode cursor colors
-  #
-  # Colors for the cursor when the vi mode is active.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #vi_mode_cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+  tokyo-night-storm: &tokyo-night-storm # Default colors
+    primary:
+      background: "0x24283b"
+      foreground: "0xa9b1d6"
 
-  # Search colors
-  #
-  # Colors used for the search bar and match highlighting.
-  #search:
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #matches:
-  #  foreground: '#000000'
-  #  background: '#ffffff'
-  #focused_match:
-  #  foreground: '#ffffff'
-  #  background: '#000000'
+    # Normal colors
+    normal:
+      black: "0x32344a"
+      red: "0xf7768e"
+      green: "0x9ece6a"
+      yellow: "0xe0af68"
+      blue: "0x7aa2f7"
+      magenta: "0xad8ee6"
+      cyan: "0x449dab"
+      white: "0x9699a8"
 
-  #bar:
-  #  background: '#c5c8c6'
-  #  foreground: '#1d1f21'
+    # Bright colors
+    bright:
+      black: "0x444b6a"
+      red: "0xff7a93"
+      green: "0xb9f27c"
+      yellow: "0xff9e64"
+      blue: "0x7da6ff"
+      magenta: "0xbb9af7"
+      cyan: "0x0db9d7"
+      white: "0xacb0d0"
 
-  # Keyboard regex hints
-  #hints:
-  # First character in the hint label
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #start:
-  #  foreground: '#1d1f21'
-  #  background: '#e9ff5e'
+  gruvbox: &gruvbox # Default Colors
+    primary:
+      background: "#1d2021"
+      foreground: "#d5c4a1"
 
-  # All characters after the first one in the hint label
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #end:
-  #  foreground: '#e9ff5e'
-  #  background: '#1d1f21'
+    # Cursor
+    cursor:
+      text: "#1d2021"
+      cursor: "#d5c4a1"
 
-  # Line indicator
-  #
-  # Color used for the indicator displaying the position in history during
-  # search and vi mode.
-  #
-  # By default, these will use the opposing primary color.
-  #line_indicator:
-  #  foreground: None
-  #  background: None
+    # Normal Colors
+    normal:
+      black: "#1d2021"
+      red: "#fb4934"
+      green: "#b8bb26"
+      yellow: "#fabd2f"
+      blue: "#83a598"
+      magenta: "#d3869b"
+      cyan: "#8ec07c"
+      white: "#d5c4a1"
 
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
+    # Bright Colors
+    bright:
+      black: "#665c54"
+      red: "#fb4934"
+      green: "#b8bb26"
+      yellow: "#fabd2f"
+      blue: "#83a598"
+      magenta: "#d3869b"
+      cyan: "#8ec07c"
+      white: "#fbf1c7"
 
-  # Normal colors
-  normal:
-    black: "#1d2021"
-    red: "#fb4934"
-    green: "#b8bb26"
-    yellow: "#fabd2f"
-    blue: "#83a598"
-    magenta: "#d3869b"
-    cyan: "#8ec07c"
-    white: "#d5c4a1"
+    # Indexed Colors
+    indexed_colors:
+      - { index: 16, color: "#fe8019" }
+      - { index: 17, color: "#d65d0e" }
+      - { index: 18, color: "#3c3836" }
+      - { index: 19, color: "#504945" }
+      - { index: 20, color: "#bdae93" }
+      - { index: 21, color: "#ebdbb2" }
 
-  # Bright colors
-  bright:
-    black: "#665c54"
-    red: "#fb4934"
-    green: "#b8bb26"
-    yellow: "#fabd2f"
-    blue: "#83a598"
-    magenta: "#d3869b"
-    cyan: "#8ec07c"
-    white: "#fbf1c7"
-
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
-
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  indexed_colors:
-    - { index: 16, color: "#fe8019" }
-    - { index: 17, color: "#d65d0e" }
-    - { index: 18, color: "#3c3836" }
-    - { index: 19, color: "#504945" }
-    - { index: 20, color: "#bdae93" }
-    - { index: 21, color: "#ebdbb2" }
+colors: *tokyo-night
 
 # Bell
 #
