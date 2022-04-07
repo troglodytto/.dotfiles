@@ -15,3 +15,10 @@ alias ls='exa -l'
 alias cat=batcat
 alias kilmux="tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 alias grep=rg
+
+
+what() {
+  [ -s "README.md" ] && cat README.md && return;
+  [ -s "README" ] && cat README && return;
+  echo "No Description Found"
+}
