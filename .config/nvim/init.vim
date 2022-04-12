@@ -1,4 +1,7 @@
 set number
+set tabstop=2
+set expandtab
+
 call plug#begin()
 
 if has('nvim')
@@ -18,6 +21,7 @@ if has('nvim')
   Plug 'stephpy/vim-yaml'
   Plug 'rust-lang/rust.vim'
   Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh' }
+  Plug 'feline-nvim/feline.nvim'
 endif
 
 let g:LanguageClient_serverCommands = { 'rust': ['rust-analyzer'] }
