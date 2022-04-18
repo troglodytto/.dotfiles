@@ -10,7 +10,6 @@
 # to the user's home directory starting with `~/`.
 #import:
 #  - /path/to/alacritty.yml
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -22,7 +21,6 @@
 # check the local terminfo database and use `alacritty` if it is
 # available, otherwise `xterm-256color` is used.
 #TERM: alacritty
-
 window:
   # Window dimensions (changes require restart)
   #
@@ -32,7 +30,6 @@ window:
   #dimensions:
   #  columns: 0
   #  lines: 0
-
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -40,7 +37,6 @@ window:
   #position:
   #  x: 0
   #  y: 0
-
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
@@ -48,10 +44,8 @@ window:
   #padding:
   #  x: 0
   #  y: 0
-
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
-
   # Window decorations
   #
   # Values for `decorations`:
@@ -62,7 +56,6 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   decorations: full
-
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -73,20 +66,16 @@ window:
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
   #startup_mode: Windowed
-
   # Window title
   #title: Alacritty
-
   # Allow terminal applications to change Alacritty's window title.
   #dynamic_title: true
-
   # Window class (Linux/BSD only):
   #class:
   # Application instance name
   #instance: Alacritty
   # General application class
   #general: Alacritty
-
   # GTK theme variant (Linux/BSD only)
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
@@ -101,10 +90,8 @@ scrolling:
 font:
   normal:
     family: "Jetbrains Mono"
-
     # The `style` can be specified to pick a specific face.
     #style: Regular
-
   # Bold font face
   #bold:
   # Font family
@@ -112,10 +99,8 @@ font:
   # If the bold family is not specified, it will fall back to the
   # value specified for the normal font.
   #family: monospace
-
   # The `style` can be specified to pick a specific face.
   #style: Bold
-
   # Italic font face
   #italic:
   # Font family
@@ -123,10 +108,8 @@ font:
   # If the italic family is not specified, it will fall back to the
   # value specified for the normal font.
   #family: monospace
-
   # The `style` can be specified to pick a specific face.
   #style: Italic
-
   # Bold italic font face
   #bold_italic:
   # Font family
@@ -134,133 +117,63 @@ font:
   # If the bold italic family is not specified, it will fall back to the
   # value specified for the normal font.
   #family: monospace
-
   # Te `style` can be specified to pick a specific face.
   #style: Bold Italic
-
   # Point size
   #size: 11.0
-
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   #offset:
   #  x: 0
   #  y: 0
-
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
   #glyph_offset:
   #  x: 0
   #  y: 0
-
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
   #use_thin_strokes: true
-
 # If `true`, bold text is drawn using the bright color variants.
 # draw_bold_text_with_bright_colors: false
 
-schemes:
-  tokyo-night: &tokyo-night # Default colors
-    primary:
-      background: "0x1a1b26"
-      foreground: "0xa9b1d6"
+colors:
+  name: TokyoNight Night
+  author: Folke
+  # Default colors
+  primary:
+    background: "0x1a1b26"
+    foreground: "0xc0caf5"
 
-    # Normal colors
-    normal:
-      black: "0x32344a"
-      red: "0xf7768e"
-      green: "0x9ece6a"
-      yellow: "0xe0af68"
-      blue: "0x7aa2f7"
-      magenta: "0xad8ee6"
-      cyan: "0x449dab"
-      white: "0x787c99"
+  # Normal colors
+  normal:
+    black: "0x15161E"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xa9b1d6"
 
-    # Bright colors
-    bright:
-      black: "0x444b6a"
-      red: "0xff7a93"
-      green: "0xb9f27c"
-      yellow: "0xff9e64"
-      blue: "0x7da6ff"
-      magenta: "0xbb9af7"
-      cyan: "0x0db9d7"
-      white: "0xacb0d0"
+  # Bright colors
+  bright:
+    black: "0x414868"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xc0caf5"
 
-  tokyo-night-storm: &tokyo-night-storm # Default colors
-    primary:
-      background: "0x24283b"
-      foreground: "0xa9b1d6"
-
-    # Normal colors
-    normal:
-      black: "0x32344a"
-      red: "0xf7768e"
-      green: "0x9ece6a"
-      yellow: "0xe0af68"
-      blue: "0x7aa2f7"
-      magenta: "0xad8ee6"
-      cyan: "0x449dab"
-      white: "0x9699a8"
-
-    # Bright colors
-    bright:
-      black: "0x444b6a"
-      red: "0xff7a93"
-      green: "0xb9f27c"
-      yellow: "0xff9e64"
-      blue: "0x7da6ff"
-      magenta: "0xbb9af7"
-      cyan: "0x0db9d7"
-      white: "0xacb0d0"
-
-  gruvbox: &gruvbox # Default Colors
-    primary:
-      background: "#1d2021"
-      foreground: "#d5c4a1"
-
-    # Cursor
-    cursor:
-      text: "#1d2021"
-      cursor: "#d5c4a1"
-
-    # Normal Colors
-    normal:
-      black: "#1d2021"
-      red: "#fb4934"
-      green: "#b8bb26"
-      yellow: "#fabd2f"
-      blue: "#83a598"
-      magenta: "#d3869b"
-      cyan: "#8ec07c"
-      white: "#d5c4a1"
-
-    # Bright Colors
-    bright:
-      black: "#665c54"
-      red: "#fb4934"
-      green: "#b8bb26"
-      yellow: "#fabd2f"
-      blue: "#83a598"
-      magenta: "#d3869b"
-      cyan: "#8ec07c"
-      white: "#fbf1c7"
-
-    # Indexed Colors
-    indexed_colors:
-      - { index: 16, color: "#fe8019" }
-      - { index: 17, color: "#d65d0e" }
-      - { index: 18, color: "#3c3836" }
-      - { index: 19, color: "#504945" }
-      - { index: 20, color: "#bdae93" }
-      - { index: 21, color: "#ebdbb2" }
-
-colors: *gruvbox
+  indexed_colors:
+    - { index: 16, color: "0xff9e64" }
+    - { index: 17, color: "0xdb4b4b" }
 
 # Bell
 #
@@ -282,14 +195,11 @@ colors: *gruvbox
 #   - EaseOutCirc
 #   - Linear
 #animation: EaseOutExpo
-
 # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
 # disable the visual bell animation.
 #duration: 0
-
 # Visual bell animation color.
 #color: '#ffffff'
-
 # Bell Command
 #
 # This program is executed whenever the bell is rung.
@@ -302,21 +212,17 @@ colors: *gruvbox
 #     args: ["Hello, World!"]
 #
 #command: None
-
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 1.0
-
 #selection:
 # This string contains all characters that are used as separators for
 # "semantic words" in Alacritty.
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-
 # When set to `true`, selected text will be copied to the primary clipboard.
 #save_to_clipboard: false
-
 cursor:
   # Cursor style
   # style: block
@@ -329,7 +235,6 @@ cursor:
   #   - | Beam
   shape: Block
   thickness: 0.1
-
   # Cursor blinking state
   #
   # Values for `blinking`:
@@ -337,7 +242,6 @@ cursor:
   #   - Off: Disable blinking by default
   #   - On: Enable blinking by default
   #   - Always: Force the cursor to always blink
-
   # Vi mode cursor style
   #
   # If the vi mode cursor style is `None` or not specified, it will fall back to
@@ -345,20 +249,16 @@ cursor:
   #
   # See `cursor.style` for available options.
   #vi_mode_style: None
-
   # Cursor blinking interval in milliseconds.
   #blink_interval: 750
-
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   #unfocused_hollow: true
-
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
 
 # Live config reload (changes require restart)
 #live_config_reload: true
-
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g.
@@ -373,16 +273,13 @@ cursor:
 #  program: /bin/bash
 #  args:
 #    - --login
-
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 #working_directory: None
-
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
-
 #mouse:
 # Click settings
 #
@@ -391,10 +288,8 @@ cursor:
 # or triple click.
 #double_click: { threshold: 300 }
 #triple_click: { threshold: 300 }
-
 # If this is `true`, the cursor is temporarily hidden when typing.
 #hide_when_typing: false
-
 # Regex hints
 #
 # Terminal hints can be used to find text in the visible part of the terminal
@@ -402,7 +297,6 @@ cursor:
 #hints:
 # Keys used for the hint labels.
 #alphabet: "jfkdls;ahgurieowpq"
-
 # List with all available hints
 #
 # Each hint must have a `regex` and either an `action` or a `command` field.
@@ -438,7 +332,6 @@ cursor:
 #     binding:
 #     key: U
 #       mods: Control|Shift
-
 # Mouse bindings
 #
 # Mouse bindings are specified as a list of objects, much like the key
@@ -464,7 +357,6 @@ cursor:
 # - `mods` (see key bindings)
 #mouse_bindings:
 #  - { mouse: Middle, action: PasteSelection }
-
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
@@ -678,7 +570,6 @@ key_bindings:
   #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
   #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
   #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
-
   # Vi Mode
   #- { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
   #- { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            }
@@ -727,7 +618,6 @@ key_bindings:
   #- { key: Slash,  mods: Shift,         mode: Vi|~Search, action: SearchBackward          }
   #- { key: N,                           mode: Vi|~Search, action: SearchNext              }
   #- { key: N,      mods: Shift,         mode: Vi|~Search, action: SearchPrevious          }
-
   # Search Mode
   #- { key: Return,                mode: Search|Vi,  action: SearchConfirm         }
   #- { key: Escape,                mode: Search,     action: SearchCancel          }
@@ -740,13 +630,12 @@ key_bindings:
   #- { key: Down,                  mode: Search,     action: SearchHistoryNext     }
   #- { key: Return,                mode: Search|~Vi, action: SearchFocusNext       }
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
-
   # (Windows, Linux, and BSD only)
   #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
   - { key: V, mods: Alt, action: Paste }
   #- { key: C,              mods: Control|Shift,                   action: Copy             }
   - { key: C, mods: Alt, action: Copy }
-  - { key: F, mods: Control, chars: "vim $(fzf) \x0D" }
+  - { key: F, mods: Control, chars: "vim $(fzf) \r" }
   - { key: F, mods: Control|Shift, mode: ~Search, action: SearchForward }
   #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
@@ -757,10 +646,8 @@ key_bindings:
   #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
   #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
   #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
-
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
-
   # (macOS only)
   #- { key: K,              mods: Command, mode: ~Vi|~Search, chars: "\x0c"            }
   #- { key: K,              mods: Command, mode: ~Vi|~Search, action: ClearHistory     }
@@ -782,13 +669,12 @@ key_bindings:
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
+theme: Tokyonight_Night
 #debug:
 # Display the time it takes to redraw each frame.
 #render_timer: false
-
 # Keep the log file after quitting Alacritty.
 #persistent_logging: false
-
 # Log level
 #
 # Values for `log_level`:
@@ -799,6 +685,5 @@ key_bindings:
 #   - Debug
 #   - Trace
 #log_level: Warn
-
 # Print all received window events.
 #print_events: false
