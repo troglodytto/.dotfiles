@@ -1,7 +1,7 @@
 set number
 set tabstop=2
 set expandtab
-
+colorscheme monokai
 call plug#begin()
 
 if has('nvim')
@@ -21,7 +21,11 @@ if has('nvim')
   Plug 'stephpy/vim-yaml'
   Plug 'rust-lang/rust.vim'
   Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh' }
-  Plug 'feline-nvim/feline.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'itchyny/lightline.vim'
+  Plug 'airblade/vim-rooter'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 endif
 
 let g:LanguageClient_serverCommands = { 'rust': ['rust-analyzer'] }
@@ -48,9 +52,10 @@ nmap <F5> <Plug>(lcn-menu)
 nmap <leader>n :NERDTreeFocus<CR>
 nmap <C-n> :NERDTree<CR>
 nmap <C-t> :NERDTreeToggle<CR>
-nmap <C-f> :NERDTreeFind<CR>
+nmap <C-f> :Find<CR>
 nmap <C-s> :w<CR>
 nmap <C-m> :CratesUp<CR>
+nmap <C-l> :Files<CR>
 " Or map each action separately
 " nmap <silent> <F2> <Plug>(lcn-rename)
 autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)

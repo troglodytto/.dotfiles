@@ -6,3 +6,7 @@ export PATH=$PATH:/home/voldemort/.local/bin
 export PATH=$PATH:/home/voldemort/.config/composer/vendor/bin
 export RUST_LOG=solana_runtime::system_instruction_processor=trace,solana_runtime::message_processor=info,solana_bpf_loader=debug,solana_rbpf=debug
 export SOLANA_DEVNET=https://api.mainnet-beta.solana.com
+export DENO_INSTALL=/home/voldemort/.deno
+export PATH=$PATH:$DENO_INSTALL/bin
+export PATH=$PATH:/home/voldemort/.yarn/bin
+
