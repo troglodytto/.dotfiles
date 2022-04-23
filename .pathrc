@@ -9,4 +9,6 @@ export SOLANA_DEVNET=https://api.mainnet-beta.solana.com
 export DENO_INSTALL=/home/voldemort/.deno
 export PATH=$PATH:$DENO_INSTALL/bin
 export PATH=$PATH:/home/voldemort/.yarn/bin
-
+export PATH=$PATH:/home/voldemort/go/bin
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,target/*}"'
+export PYTHONPATH=/usr/bin/python3

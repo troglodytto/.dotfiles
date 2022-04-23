@@ -18,7 +18,7 @@ alias grep=rg
 
 
 what() {
-  [ -s "README.md" ] && cat README.md && return;
-  [ -s "README" ] && cat README && return;
+  [ -s "README.md" ] && glow README.md && return;
+  [ -s "README" ] && glow README && return;
   echo "No Description Found"
 }
