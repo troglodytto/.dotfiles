@@ -80,5 +80,8 @@
       "offsetColumnEnd": 1,
       "formatLines": 1
     }
+  },
+  "go.goplsOptions": {
+    "completeUnimported": true
   }
 }
