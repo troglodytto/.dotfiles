@@ -47,3 +47,6 @@ let g:rustfmt_autosave=1
 
 " Typescript/JavaScript
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+" Go
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
