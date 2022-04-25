@@ -1,11 +1,42 @@
 {
   "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    },
     "go": {
       "command": "gopls",
       "rootPatterns": ["go.mod"],
       "trace.server": "verbose",
       "filetypes": ["go"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hei.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"]
     }
+  },
+  "go.goplsOptions": {
+    "completeUnimported": true
   },
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
@@ -80,8 +111,5 @@
       "offsetColumnEnd": 1,
       "formatLines": 1
     }
-  },
-  "go.goplsOptions": {
-    "completeUnimported": true
   }
 }

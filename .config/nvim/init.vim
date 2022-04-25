@@ -1,6 +1,8 @@
-set number
+set number relativenumber
 set tabstop=2
 set expandtab
+set softtabstop=2
+set shiftwidth=2
 colorscheme delek 
 set background=light
 call plug#begin()
