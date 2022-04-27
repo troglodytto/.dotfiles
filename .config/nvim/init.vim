@@ -1,3 +1,4 @@
+" Basic Setup
 set number relativenumber
 set tabstop=2
 set expandtab
@@ -5,6 +6,8 @@ set softtabstop=2
 set shiftwidth=2
 colorscheme delek 
 set background=light
+set encoding=UTF-8
+
 call plug#begin()
 
 if has('nvim')
@@ -19,6 +22,7 @@ if has('nvim')
   Plug 'cespare/vim-toml'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'tasn/vim-tsx'
+  Plug 'ryanoasis/vim-devicons'
 endif
 
 call plug#end()
