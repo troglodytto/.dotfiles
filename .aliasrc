@@ -11,7 +11,7 @@ alias vim=nvim
 alias stv=solana-test-validator
 alias sol-devnet='solana config set --url $SOLANA_DEVNET'
 alias sol-localnet='solana config set --url http://localhost:8899'
-alias ls='exa -l'
+alias ls='exa -l --icons'
 alias cat=batcat
 alias kilmux="tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 alias grep=rg
