@@ -22,3 +22,17 @@ what() {
   [ -s "README" ] && glow README && return;
   echo "No Description Found"
 }
+
+yarninit() {
+  if [[ -s "package.json" ]]; then
+      echo "\"package.json\" already exists"
+      return
+  fi
+
+  yarn init
+
+  if [ ! -s ".yarnrc" ] && [ ! -s ".yarnrc.yml" ]; then
+    echo "nodeLinker: node-modules" > .yarnrc.yml
+    echo "yarnPath: $HOME/.yarn/releases/yarn-3.2.0.cjs" >> .yarnrc.yml
+  fi
+}
