@@ -15,7 +15,7 @@ alias ls='exa -l --icons'
 alias cat=batcat
 alias kilmux="tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 alias grep=rg
-
+alias du="dust -d 1"
 
 what() {
   [ -s "README.md" ] && glow README.md && return;

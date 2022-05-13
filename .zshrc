@@ -21,6 +21,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
-[ -f "/home/voldemort/.ghcup/env" ] && source "/home/voldemort/.ghcup/env" # ghcup-env
+#[ -f "/home/voldemort/.ghcup/env" ] && source "/home/voldemort/.ghcup/env" # ghcup-env
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f "/home/ryuk/.ghcup/env" ] && source "/home/ryuk/.ghcup/env" # ghcup-env

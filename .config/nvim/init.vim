@@ -23,6 +23,7 @@ if has('nvim')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'tasn/vim-tsx'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'elixir-editors/vim-elixir'
 endif
 
 call plug#end()

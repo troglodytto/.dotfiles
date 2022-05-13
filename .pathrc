@@ -1,14 +1,14 @@
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/voldemort/Android/Sdk/platform-tools
-export PATH=$PATH:/home/voldemort/crp/
-export PATH=$PATH:/home/voldemort/.local/share/solana/install/active_release/bin
-export PATH=$PATH:/home/voldemort/.local/bin
-export PATH=$PATH:/home/voldemort/.config/composer/vendor/bin
+export PATH=$PATH:$HOME/Android/Sdk/platform-tools
+export PATH=$PATH:$HOME/crp/
+export PATH=$PATH:$HOME/.local/share/solana/install/active_release/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export RUST_LOG=solana_runtime::system_instruction_processor=trace,solana_runtime::message_processor=info,solana_bpf_loader=debug,solana_rbpf=debug
 export SOLANA_DEVNET=https://api.mainnet-beta.solana.com
-export DENO_INSTALL=/home/voldemort/.deno
+export DENO_INSTALL=$HOME/.deno
 export PATH=$PATH:$DENO_INSTALL/bin
-export PATH=$PATH:/home/voldemort/.yarn/bin
-export PATH=$PATH:/home/voldemort/go/bin
+export PATH=$PATH:$HOME/.yarn/bin
+export PATH=$PATH:$HOME/go/bin
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,target/*}"'
 export PYTHONPATH=/usr/bin/python3
