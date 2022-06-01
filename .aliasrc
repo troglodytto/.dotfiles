@@ -6,7 +6,6 @@ alias pip=pip3
 alias mysql='docker run -it --network bridge --rm mysql mysql -h 172.17.0.1 -uroot -p'
 alias psql='docker run -it --rm --network bridge postgres psql -h 172.17.0.1 -U postgres -W'
 alias redis='docker run -ti --network bridge --rm redis redis-cli -h 172.17.0.1'
-alias office='git config --local user.name "Piyush Upadhyay" && git config --local user.email piyush@rivi.co'
 #alias vim=nvim
 alias stv=solana-test-validator
 alias sol-devnet='solana config set --url $SOLANA_DEVNET'
@@ -20,19 +19,14 @@ alias du="dust -d 1"
 what() {
   [ -s "README.md" ] && glow README.md && return;
   [ -s "README" ] && glow README && return;
-  echo "No Description Found"
-}
+  echo "No Description Found";
+};
 
-yarninit() {
-  if [[ -s "package.json" ]]; then
-      echo "\"package.json\" already exists"
-      return
-  fi
+office() {
+  git config --local user.name "Piyush Upadhyay";
+  git config --local user.email piyush@rivi.co;
+  git config --local user.signingkey 08AD1A87469FAFBD0A6740F854B6B38540C7E22A
+  git config --local commit.gpgsign true;
+};
 
-  yarn init
 
-  if [ ! -s ".yarnrc" ] && [ ! -s ".yarnrc.yml" ]; then
-    echo "nodeLinker: node-modules" > .yarnrc.yml
-    echo "yarnPath: $HOME/.yarn/releases/yarn-3.2.0.cjs" >> .yarnrc.yml
-  fi
-}
