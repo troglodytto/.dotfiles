@@ -1,0 +1,232 @@
+{
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "emphasis",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "strong",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "markup.underline",
+        "settings": {
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": "markup.bold",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "markup.heading",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "markup.italic",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "String interpolation",
+        "scope": [
+          "punctuation.definition.template-expression.begin",
+          "punctuation.definition.template-expression.end",
+          "punctuation.section.embedded"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "this.self",
+        "scope": "variable.language",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff5874"
+        }
+      },
+      {
+        "name": "@Decorator",
+        "scope": ["meta.decorator punctuation.decorator"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["punctuation.definition.comment", "comment"],
+        "settings": {
+          // "foreground": "#ff5874",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be in italic =FlottFlott
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type",
+          "storage.type.class.js" //class keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics VSCode has some defaults for italics
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.cursorWidth": 3,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.defaultInterpreterPath": "/bin/python3",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "editor.suggestSelection": "first",
+  "files.associations": {
+    ".env": "shellscript",
+    "*.heex": "phoenix-heex",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.css": "css"
+  },
+  "editor.linkedEditing": true,
+  "files.exclude": {
+    ".yarn": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.next": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "️": true
+  },
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "solidity.compileUsingRemoteVersion": "v0.5.16+commit.9c3226ce",
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "prettier.jsxBracketSameLine": true,
+  "editor.formatOnSave": true,
+  "editor.cursorWidth": 3,
+  "material-icon-theme.files.associations": {
+    "*.view.ts": "angular"
+  },
+  "editor.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.suggest.localityBonus": true,
+  "editor.cursorBlinking": "solid",
+  "resmon.show.cputemp": true,
+  "resmon.show.battery": false,
+  "resmon.show.cpufreq": false,
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "workbench.colorTheme": "Ayu Dark Bordered",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "[phoenix-heex]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "emmet.includeLanguages": {},
+  "better-comments.highlightPlainText": true,
+  "haskell.manageHLS": "GHCup",
+  "editor.autoClosingDelete": "always",
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "window.zoomLevel": 1,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "razor.trace": "Verbose",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 0 }",
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  }
+}
