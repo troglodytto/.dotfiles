@@ -163,7 +163,6 @@
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
   },
-  "prettier.jsxBracketSameLine": true,
   "editor.formatOnSave": true,
   "editor.cursorWidth": 3,
   "material-icon-theme.files.associations": {
@@ -179,8 +178,8 @@
   "go.toolsManagement.autoUpdate": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "literals",
-  "typescript.inlayHints.parameterNames.enabled": "literals",
+  // "javascript.inlayHints.parameterNames.enabled": "literals",
+  // "typescript.inlayHints.parameterNames.enabled": "literals",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -211,7 +210,6 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "window.zoomLevel": 1,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -228,5 +226,13 @@
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 0 }",
   "[haskell]": {
     "editor.defaultFormatter": "haskell.haskell"
-  }
+  },
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false,
+  "prettier.bracketSpacing": false,
+  "prettier.arrowParens": "avoid",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "window.zoomLevel": 1
 }
