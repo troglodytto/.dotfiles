@@ -1,7 +1,7 @@
 [user]
 	name = Ephemeral Astronaut
 	email = troglodytto@gmail.com
-	signingkey = A1335A2020D8DF2D72E19C5CEC9F0D481B68B2EF
+	signingkey = 5322EEBF2C58CD2B70F2DD09EBC8BFB7B6708DDD 
 
 [init]
 	defaultBranch = main
