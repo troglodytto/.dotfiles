@@ -42,8 +42,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   #padding:
-  #  x: 0
-  #  y: 0
+  # x: 8
+  # y: 8
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
   # Window decorations
@@ -56,7 +56,7 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   decorations: full
-  # opacity: 0.95
+  opacity: 1.0
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -91,7 +91,7 @@ scrolling:
 font:
   normal:
     family: "JetBrainsMono Nerd Font Mono"
-  size: 14
+  size: 8
   # The `style` can be specified to pick a specific face.
   #style: Regular
   # Bold font face

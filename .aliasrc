@@ -15,7 +15,7 @@ alias cat=batcat
 alias kilmux="tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 alias grep=rg
 alias du="dust -d 1"
-
+alias tmux="tmux -u"
 what() {
   [ -s "README.md" ] && glow README.md && return;
   [ -s "README" ] && glow README && return;
@@ -28,5 +28,4 @@ office() {
   git config --local user.signingkey 08AD1A87469FAFBD0A6740F854B6B38540C7E22A
   git config --local commit.gpgsign true;
 };
-
 

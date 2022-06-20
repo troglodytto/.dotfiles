@@ -1,12 +1,14 @@
-export ZSH="$HOME/.oh-my-zsh"
+#export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="half-life"
+#ZSH_THEME="half-life"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+#plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
-# eval "$(starship init zsh)"
+#source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
 source "$HOME/.cargo/env"
+source "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 [ -s "$HOME/.aliasrc"  ] && source "$HOME/.aliasrc"
 [ -s "$HOME/.pathrc"  ] && source "$HOME/.pathrc"
@@ -30,3 +32,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+fpath+="$HOME/.zsh_functions"

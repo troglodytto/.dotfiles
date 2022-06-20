@@ -1,16 +1,15 @@
 {
   "dependencies": {
-    "@angular/cli": "^14.0.1",
+    "@angular/cli": "^14.0.2",
     "@nestjs/cli": "^8.2.6",
-    "@vue/cli": "^5.0.4",
+    "@vue/cli": "^5.0.6",
     "create-next-app": "^12.1.6",
     "create-react-app": "^5.0.1",
     "create-vite": "^2.9.4",
     "pm2": "^5.2.0",
     "prettier": "^2.6.2",
-    "rollup": "^2.75.3",
+    "rollup": "^2.75.6",
     "tldr": "^3.3.7",
-    "typescript": "^4.7.3",
-    "vtop": "^0.6.1"
+    "typescript": "^4.7.4"
   }
 }
