@@ -21,7 +21,7 @@ alias avd=avdmanager
 office() {
   git config --local user.name "Piyush Upadhyay";
   git config --local user.email piyush@rivi.co;
-  git config --local user.signingkey 08AD1A87469FAFBD0A6740F854B6B38540C7E22A
+  git config --local user.signingkey B9DDF3C0350F53CE025FC13240B4B24740B7DE0F
   git config --local commit.gpgsign true;
 };
 
