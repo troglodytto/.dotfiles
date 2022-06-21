@@ -7,9 +7,6 @@ alias mysql='docker run -it --network bridge --rm mysql mysql -h 172.17.0.1 -uro
 alias psql='docker run -it --rm --network bridge postgres psql -h 172.17.0.1 -U postgres -W'
 alias redis='docker run -ti --network bridge --rm redis redis-cli -h 172.17.0.1'
 alias vim=nvim
-alias stv=solana-test-validator
-alias sol-devnet='solana config set --url $SOLANA_DEVNET'
-alias sol-localnet='solana config set --url http://localhost:8899'
 alias ls='exa -l --icons'
 alias cat=batcat
 alias kilmux="tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
