@@ -7,7 +7,7 @@ This Terminal config is Pure Pizzazz ✨
 > My personal configurations
 
 - ZSH ([.zshrc](.zshrc))
-- Neovim ([.config/nvim](.config/nvim/init.vim))
+- Neovim ([.config/nvim](.config/nvim/init.lua))
 - Alacritty ([.config/alacritty](.config/alacritty/alacritty.yml))
 - Yarn ([.config/yarn](.config/yarn/global/package.json))
 - Custom Aliases and Functions ([.aliasrc](.aliasrc))
