@@ -15,7 +15,13 @@ return require('packer').startup({
     use 'ryanoasis/vim-devicons'
     use 'cespare/vim-toml'
     use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/nvim-compe'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
     use 'rust-lang/rust.vim'
     use 'simrat39/rust-tools.nvim'
     use 'mfussenegger/nvim-dap'
@@ -65,13 +71,15 @@ return require('packer').startup({
       },
     })
 
-    require('compe').setup({
-      enabled = true,
-      source = {
-        path = true,
-        buffer = true,
-        nvim_lsp = true
-      }
-    })
+    vim.cmd [[
+      sign define DiagnosticSignError text= linehl= texthl=DiagnosticSignError numhl=
+      sign define DiagnosticSignWarn text= linehl= texthl=DiagnosticSignWarn numhl=
+      sign define DiagnosticSignInfo text= linehl= texthl=DiagnosticSignInfo numhl=
+      sign define DiagnosticSignHint text= linehl= texthl=DiagnosticSignHint numhl=
+    ]]
+
+    require('autocomplete').setup(
+      require('cmp')
+    )
   end
 })

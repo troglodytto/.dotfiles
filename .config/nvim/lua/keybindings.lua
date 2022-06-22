@@ -6,8 +6,9 @@ local function nmap(shortcut, command)
   map('n', shortcut, command)
 end
 
-nmap("<C-n>", "<cmd>NERDTree<CR>")
 nmap("<leader>n", "<cmd>NERDTreeFocus<CR>")
-nmap("<C-t>", "<cmd>NERDTreeToggle<CR>")
-nmap("<C-m>", "<cmd>CratesUp<CR>")
-nmap("<C-l>", "<cmd>FZF<CR>")
+nmap("<leader>p", "<cmd>NERDTreeToggle<CR>")
+nmap("<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>")
+nmap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
+nmap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
+nmap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
