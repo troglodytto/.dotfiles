@@ -42,8 +42,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 2
-    y: 2
+    x: 7
+    y: 7
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
   # Window decorations
@@ -147,34 +147,34 @@ colors:
   author: Folke
   # Default colors
   primary:
-    background: '0x1a1b26'
-    foreground: '0xc0caf5'
+    background: "0x1a1b26"
+    foreground: "0xc0caf5"
 
   # Normal colors
   normal:
-    black: '0x15161E'
-    red: '0xf7768e'
-    green: '0x9ece6a'
-    yellow: '0xe0af68'
-    blue: '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan: '0x7dcfff'
-    white: '0xa9b1d6'
+    black: "0x15161E"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xa9b1d6"
 
   # Bright colors
   bright:
-    black: '0x414868'
-    red: '0xf7768e'
-    green: '0x9ece6a'
-    yellow: '0xe0af68'
-    blue: '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan: '0x7dcfff'
-    white: '0xc0caf5'
+    black: "0x414868"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xc0caf5"
 
   indexed_colors:
-    - { index: 16, color: '0xff9e64' }
-    - { index: 17, color: '0xdb4b4b' }
+    - {index: 16, color: "0xff9e64"}
+    - {index: 17, color: "0xdb4b4b"}
 
 # Bell
 #
@@ -633,16 +633,11 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
   # (Windows, Linux, and BSD only)
   #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
-  - { key: V, mods: Alt, action: Paste }
+  - {key: V, mods: Alt, action: Paste}
   #- { key: C,              mods: Control|Shift,                   action: Copy             }
-  - { key: C, mods: Alt, action: Copy }
-  - { key: F, mods: Control, chars: "vim $(fzf) \r" }
-  - {
-      key: F,
-      mods: Control|Shift,
-      mode: ~Search,
-      action: SearchForward
-    }
+  - {key: C, mods: Alt, action: Copy}
+  - {key: F, mods: Control, chars: "vim $(fzf) \r"}
+  - {key: F, mods: Control|Shift, mode: ~Search, action: SearchForward}
   #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
   #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
@@ -676,7 +671,6 @@ key_bindings:
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
 theme: Tokyonight_Night
-
 #debug:
 # Display the time it takes to redraw each frame.
 #render_timer: false

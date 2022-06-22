@@ -14,6 +14,7 @@ alias grep=rg
 alias du="dust -d 1"
 alias tmux="tmux -u"
 alias avd=avdmanager
+alias tree="exa --tree --icons --level=4"
 
 office() {
   git config --local user.name "Piyush Upadhyay";

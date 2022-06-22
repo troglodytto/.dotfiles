@@ -10,3 +10,4 @@ vim.opt.expandtab = true
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.encoding = "utf-8"
+vim.o.completeopt = "menuone,noselect"
