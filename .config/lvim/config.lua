@@ -190,6 +190,27 @@ require('rust-tools').setup({
   },
 })
 
+
+require("lvim.lsp.null-ls.formatters").setup {
+  {
+    command = "prettierd",
+    filetypes = {
+      "typescript",
+      "typescriptreact",
+      "javascript",
+      "javascriptreact",
+      "css",
+      "scss",
+      "less",
+      "html",
+      "vue",
+      "json",
+      "jsonc",
+      "graphql",
+      "yaml"
+    }
+  }
+}
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.json", "*.jsonc" },
