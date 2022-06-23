@@ -10,4 +10,5 @@ vim.opt.expandtab = true
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.encoding = "utf-8"
+vim.opt.mouse = "a"
 vim.o.completeopt = "menuone,noselect"

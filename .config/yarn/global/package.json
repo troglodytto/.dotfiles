@@ -6,10 +6,15 @@
     "create-next-app": "^12.1.6",
     "create-react-app": "^5.0.1",
     "create-vite": "^2.9.4",
+    "eslint": "^8.18.0",
+    "neovim": "^4.10.1",
     "pm2": "^5.2.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "rollup": "^2.75.6",
     "tldr": "^3.3.7",
-    "typescript": "^4.7.4"
+    "tree-sitter-cli": "^0.20.6",
+    "typescript": "^4.7.4",
+    "typescript-language-server": "^0.11.1",
+    "watch-http-server": "^0.7.6"
   }
 }

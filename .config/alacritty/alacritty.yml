@@ -56,7 +56,7 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   decorations: none
-  opacity: 0.85
+  opacity: 1.0
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -143,38 +143,38 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 # draw_bold_text_with_bright_colors: false
 colors:
-  name: TokyoNight Night
+  name: TokyoNight Storm
   author: Folke
   # Default colors
   primary:
-    background: "0x1a1b26"
-    foreground: "0xc0caf5"
+    background: '0x24283b'
+    foreground: '0xc0caf5'
 
   # Normal colors
   normal:
-    black: "0x15161E"
-    red: "0xf7768e"
-    green: "0x9ece6a"
-    yellow: "0xe0af68"
-    blue: "0x7aa2f7"
-    magenta: "0xbb9af7"
-    cyan: "0x7dcfff"
-    white: "0xa9b1d6"
+    black: '0x1D202F'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xa9b1d6'
 
   # Bright colors
   bright:
-    black: "0x414868"
-    red: "0xf7768e"
-    green: "0x9ece6a"
-    yellow: "0xe0af68"
-    blue: "0x7aa2f7"
-    magenta: "0xbb9af7"
-    cyan: "0x7dcfff"
-    white: "0xc0caf5"
+    black: '0x414868'
+    red: '0xf7768e'
+    green: '0x9ece6a'
+    yellow: '0xe0af68'
+    blue: '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan: '0x7dcfff'
+    white: '0xc0caf5'
 
   indexed_colors:
-    - {index: 16, color: "0xff9e64"}
-    - {index: 17, color: "0xdb4b4b"}
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
 
 # Bell
 #
@@ -226,16 +226,16 @@ colors:
 #save_to_clipboard: false
 cursor:
   # Cursor style
-  # style: block
-  blinking: Off
-  # Cursor shape
-  #
-  # Values for `shape`:
-  #   - ▇ Block
-  #   - _ Underline
-  #   - | Beam
-  shape: Block
-  thickness: 0.1
+  style:
+    blinking: Off
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+    thickness: 1.0
   # Cursor blinking state
   #
   # Values for `blinking`:
@@ -257,7 +257,6 @@ cursor:
   #unfocused_hollow: true
   # Thickness of the cursor relative to the cell width as floating point number
   # from `0.0` to `1.0`.
-
 # Live config reload (changes require restart)
 #live_config_reload: true
 # Shell
@@ -633,11 +632,16 @@ key_bindings:
   #- { key: Return, mods: Shift,   mode: Search|~Vi, action: SearchFocusPrevious   }
   # (Windows, Linux, and BSD only)
   #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
-  - {key: V, mods: Alt, action: Paste}
+  - { key: V, mods: Alt, action: Paste }
   #- { key: C,              mods: Control|Shift,                   action: Copy             }
-  - {key: C, mods: Alt, action: Copy}
-  - {key: F, mods: Control, chars: "vim $(fzf) \r"}
-  - {key: F, mods: Control|Shift, mode: ~Search, action: SearchForward}
+  - { key: C, mods: Alt, action: Copy }
+  # - {key: F, mods: Control, chars: "\\fs\r\n"}
+  - {
+      key: F,
+      mods: Control|Shift,
+      mode: ~Search,
+      action: SearchForward
+    }
   #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
   #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
@@ -670,7 +674,8 @@ key_bindings:
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
-theme: Tokyonight_Night
+theme: Tokyonight_Storm
+
 #debug:
 # Display the time it takes to redraw each frame.
 #render_timer: false
