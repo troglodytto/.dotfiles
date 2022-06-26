@@ -12,6 +12,7 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "tokyonight"
+vim.g.tokyonight_style = "night"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -24,7 +25,7 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-f>"] = "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>"
 lvim.keys.normal_mode["<leader>ft"] = "<cmd>lua require('telescope.builtin').treesitter()<cr>"
-
+lvim.keys.normal_mode["<leader>gd"] = "<cmd>lua vim.lsp.buf.definition()<cr>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -90,7 +91,7 @@ lvim.builtin.treesitter.ensure_installed = {
 
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
-
+lvim.builtin.lualine.style = "lvim"
 -- generic LSP settings
 
 -- ---@usage disable automatic installation of servers
@@ -193,7 +194,7 @@ require('rust-tools').setup({
 
 require("lvim.lsp.null-ls.formatters").setup {
   {
-    command = "prettierd",
+    command = "prettier",
     filetypes = {
       "typescript",
       "typescriptreact",
@@ -211,9 +212,25 @@ require("lvim.lsp.null-ls.formatters").setup {
     }
   }
 }
+
+vim.api.nvim_create_autocmd("CursorHold", {
+  -- buffer = bufnr,
+  callback = function()
+    local opts = {
+      focusable = false,
+      close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+      border = 'rounded',
+      source = 'always',
+      prefix = ' ',
+      scope = 'cursor',
+    }
+    vim.diagnostic.open_float(nil, opts)
+  end
+})
+
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {
-  pattern = { "*.json", "*.jsonc" },
+  -- pattern = { "*.json", "*.jsonc" },
   -- enable wrap mode for json files only
   command = "setlocal wrap",
 })
