@@ -91,7 +91,7 @@ scrolling:
 font:
   normal:
     family: "JetBrainsMono Nerd Font Mono"
-  size: 8
+  size: 7
   # The `style` can be specified to pick a specific face.
   #style: Regular
   # Bold font face
@@ -143,38 +143,32 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 # draw_bold_text_with_bright_colors: false
 colors:
-  name: TokyoNight Night
-  author: Folke
   # Default colors
   primary:
-    background: '0x1a1b26'
-    foreground: '0xc0caf5'
+    background: "#0A0E14"
+    foreground: "#B3B1AD"
 
   # Normal colors
   normal:
-    black: '0x15161E'
-    red: '0xf7768e'
-    green: '0x9ece6a'
-    yellow: '0xe0af68'
-    blue: '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan: '0x7dcfff'
-    white: '0xa9b1d6'
+    black: "#01060E"
+    red: "#EA6C73"
+    green: "#91B362"
+    yellow: "#F9AF4F"
+    blue: "#53BDFA"
+    magenta: "#FAE994"
+    cyan: "#90E1C6"
+    white: "#C7C7C7"
 
   # Bright colors
   bright:
-    black: '0x414868'
-    red: '0xf7768e'
-    green: '0x9ece6a'
-    yellow: '0xe0af68'
-    blue: '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan: '0x7dcfff'
-    white: '0xc0caf5'
-
-  indexed_colors:
-    - { index: 16, color: '0xff9e64' }
-    - { index: 17, color: '0xdb4b4b' }
+    black: "#686868"
+    red: "#F07178"
+    green: "#C2D94C"
+    yellow: "#FFB454"
+    blue: "#59C2FF"
+    magenta: "#FFEE99"
+    cyan: "#95E6CB"
+    white: "#FFFFFF"
 
 # Bell
 #
@@ -636,12 +630,7 @@ key_bindings:
   #- { key: C,              mods: Control|Shift,                   action: Copy             }
   - { key: C, mods: Alt, action: Copy }
   # - {key: F, mods: Control, chars: "\\fs\r\n"}
-  - {
-      key: F,
-      mods: Control|Shift,
-      mode: ~Search,
-      action: SearchForward
-    }
+  - { key: F, mods: Control|Shift, mode: ~Search, action: SearchForward }
   #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
   #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
@@ -674,8 +663,7 @@ key_bindings:
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
-theme: Tokyonight_Night
-
+theme: Ayu-Dark
 #debug:
 # Display the time it takes to redraw each frame.
 #render_timer: false

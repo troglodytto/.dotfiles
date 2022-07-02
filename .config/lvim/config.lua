@@ -11,8 +11,10 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
-vim.g.tokyonight_style = "night"
+-- vim.g.tokyonight_style = "night"
+-- vim.g.tokyonight_colors = { bg = '#0000' }
+vim.g.ayucolor = "dark"
+lvim.colorscheme = "ayu"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -25,7 +27,7 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-f>"] = "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>"
 lvim.keys.normal_mode["<leader>ft"] = "<cmd>lua require('telescope.builtin').treesitter()<cr>"
-lvim.keys.normal_mode["<leader>gd"] = "<cmd>lua vim.lsp.buf.definition()<cr>"
+lvim.keys.normal_mode["<leader>nm"] = "<cmd>lua vim.lsp.buf.definition()<cr>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -156,6 +158,7 @@ lvim.builtin.lualine.style = "lvim"
 -- Additional Plugins
 lvim.plugins = {
   { "folke/tokyonight.nvim" },
+  { "ayu-theme/ayu-vim" },
   { "simrat39/rust-tools.nvim" },
   --     {
   --       "folke/trouble.nvim",

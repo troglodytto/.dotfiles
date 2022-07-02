@@ -7,6 +7,6 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/Android/Sdk/platform-tools
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$HOME/crp/
+export PATH=$PATH:$HOME/shadow/
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.yarn/bin

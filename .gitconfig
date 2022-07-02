@@ -9,4 +9,4 @@
 [commit]
 	gpgsign = true
 [core]
-	editor = vim
+	editor = code
