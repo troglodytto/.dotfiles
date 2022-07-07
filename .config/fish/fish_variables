@@ -1,8 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_avd:avdmanager
-SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_cat:batcat
 SETUVAR _fish_abbr_cpoy:xclip\x20\x2dselection\x20c
 SETUVAR _fish_abbr_du:dust\x20\x2dd\x201
 SETUVAR _fish_abbr_grep:rg

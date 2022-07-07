@@ -8,7 +8,7 @@ abbr --add redis 'docker run -ti --network bridge --rm redis redis-cli -h 172.17
 abbr --add vim 'lvim'
 abbr --add v 'nvim'
 abbr --add ls 'exa -l --icons'
-abbr --add cat 'bat'
+abbr --add cat 'batcat'
 abbr --add kilmux "tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 abbr --add grep 'rg'
 abbr --add du 'dust -d 1'
