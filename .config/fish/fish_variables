@@ -1,8 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_avd:avdmanager
-SETUVAR _fish_abbr_cat:batcat
+SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_cpoy:xclip\x20\x2dselection\x20c
 SETUVAR _fish_abbr_du:dust\x20\x2dd\x201
 SETUVAR _fish_abbr_grep:rg
@@ -46,4 +46,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:\x24fish_user_paths\x20/bin\x20/usr/bin\x20/usr/local/bin\x1e/usr/local/go/bin\x1e\x24HOME/Android/Sdk/platform\x2dtools\x1e\x24ANDROID_HOME/cmdline\x2dtools/latest/bin\x1e\x24ANDROID_HOME/emulator\x1e\x24HOME/crp/\x1e\x24HOME/\x2elocal/bin\x1e\x24HOME/\x2eyarn/bin\x1e/bin\x20/usr/bin\x20/usr/local/bin\x1e/bin\x1e/usr/bin\x1e/usr/local/bin\x1e/home/ryuk/Android/Sdk/platform\x2dtools\x1e/home/ryuk/Android/Sdk/cmdline\x2dtools/latest/bin\x1e/home/ryuk/Android/Sdk/emulator\x1e/home/ryuk/crp\x1e/home/ryuk/\x2elocal/bin\x1e/home/ryuk/\x2eyarn/bin\x1e/home/ryuk/shadow
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:\x24fish_user_paths\x20/bin\x20/usr/bin\x20/usr/local/bin\x1e/usr/local/go/bin\x1e\x24HOME/Android/Sdk/platform\x2dtools\x1e\x24ANDROID_HOME/cmdline\x2dtools/latest/bin\x1e\x24ANDROID_HOME/emulator\x1e\x24HOME/crp/\x1e\x24HOME/\x2elocal/bin\x1e\x24HOME/\x2eyarn/bin\x1e/bin\x20/usr/bin\x20/usr/local/bin\x1e/bin\x1e/usr/bin\x1e/usr/local/bin\x1e/home/ryuk/Android/Sdk/platform\x2dtools\x1e/home/ryuk/Android/Sdk/cmdline\x2dtools/latest/bin\x1e/home/ryuk/Android/Sdk/emulator\x1e/home/ryuk/crp\x1e/home/ryuk/\x2elocal/bin\x1e/home/ryuk/\x2eyarn/bin\x1e/home/ryuk/shadow\x1e/home/voldemort/\x2eyarn/bin\x1e/home/voldemort/shadow
