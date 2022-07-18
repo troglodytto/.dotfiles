@@ -14,8 +14,6 @@ lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-f>"] = "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>"
-lvim.keys.insert_mode["<C-s>"] = ":w<cr>"
-lvim.keys.insert_mode["<C-f>"] = "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>"
 
 
 lvim.keys.normal_mode["<leader>ft"] = "<cmd>lua require('telescope.builtin').treesitter()<cr>"
