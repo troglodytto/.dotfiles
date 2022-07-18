@@ -6,4 +6,8 @@ source $ZSH/oh-my-zsh.sh
 setopt auto_cd
 
 eval "$(starship init zsh)"
-alias vim=nvim
+alias vim="nvim"
+alias ls="exa -l --icons -a"
+alias cat="bat"
+alias tree="exa --tree --icons --level=4"
+alias grep="rg"

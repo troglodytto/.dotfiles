@@ -6,9 +6,9 @@ abbr --add mysql 'docker run -it --network bridge --rm mysql mysql -h 172.17.0.1
 abbr --add psql 'docker run -it --rm --network bridge postgres psql -h 172.17.0.1 -U postgres -W'
 abbr --add redis 'docker run -ti --network bridge --rm redis redis-cli -h 172.17.0.1'
 abbr --add vim 'lvim'
-abbr --add v 'nvim'
+abbr --add vi 'nvim'
 abbr --add ls 'exa -l --icons'
-abbr --add cat 'batcat'
+abbr --add cat 'bat'
 abbr --add kilmux "tmux list-sessions | grep -v attached | awk 'BEGIN{FS=\":\"}{print $1}' | xargs -n 1 tmux kill-session -t"
 abbr --add grep 'rg'
 abbr --add du 'dust -d 1'
