@@ -13,4 +13,3 @@ This Terminal config is Pure Pizzazz ✨
 - Yarn ([.config/yarn](.config/yarn/global/package.json))
 - Custom Aliases and Functions ([.aliasrc](.aliasrc))
 - Custom Path ([.pathrc](.pathrc))
-
