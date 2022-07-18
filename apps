@@ -9,6 +9,7 @@ cmake
 docker
 docker-compose
 dolphin
+elixir
 exa
 fakeroot
 flameshot
