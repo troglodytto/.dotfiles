@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "@angular/cli": "^14.0.4",
+    "@angular/cli": "^14.0.6",
     "@nestjs/cli": "^8.2.8",
     "@vue/cli": "^5.0.6",
     "create-next-app": "^12.1.6",
     "create-react-app": "^5.0.1",
     "create-vite": "^2.9.4",
     "eslint": "^8.19.0",
+    "graphqlviz": "^4.0.1",
     "neovim": "^4.10.1",
     "pm2": "^5.2.0",
     "prettier": "^2.7.1",

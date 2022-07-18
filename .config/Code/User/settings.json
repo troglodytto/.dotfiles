@@ -115,7 +115,6 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "python.defaultInterpreterPath": "/bin/python3",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "git.confirmSync": false,
@@ -159,10 +158,6 @@
   "[elixir]": {
     "editor.defaultFormatter": "JakeBecker.elixir-ls"
   },
-  "solidity.compileUsingRemoteVersion": "v0.5.16+commit.9c3226ce",
-  "[solidity]": {
-    "editor.defaultFormatter": "JuanBlanco.solidity"
-  },
   "editor.formatOnSave": true,
   "editor.cursorWidth": 3,
   "material-icon-theme.files.associations": {
@@ -175,23 +170,9 @@
   "resmon.show.cputemp": true,
   "resmon.show.battery": false,
   "resmon.show.cpufreq": false,
-  "go.toolsManagement.autoUpdate": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "javascript.inlayHints.parameterNames.enabled": "literals",
-  // "typescript.inlayHints.parameterNames.enabled": "literals",
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false,
-    "editor.defaultFormatter": "Dart-Code.dart-code"
-  },
-  "workbench.colorTheme": "Ayu Dark Bordered",
+  "workbench.colorTheme": "One Dark Pro",
   "editor.fontSize": 15,
   "terminal.integrated.fontSize": 15,
   "[phoenix-heex]": {
@@ -213,9 +194,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
   "razor.trace": "Verbose",
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
@@ -227,12 +205,15 @@
   "[haskell]": {
     "editor.defaultFormatter": "haskell.haskell"
   },
-  "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false,
   "prettier.bracketSpacing": false,
   "prettier.arrowParens": "avoid",
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": 1
+  "Lua.telemetry.enable": false,
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "glassit.alpha": 255,
+  "svelte.enable-ts-plugin": true
 }

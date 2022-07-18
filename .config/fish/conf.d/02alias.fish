@@ -19,6 +19,6 @@ abbr --add tree 'exa --tree --icons --level=4'
 function office --wraps git --description "Setup the current repository for office use"
   git config --local user.name "Piyush Upadhyay"
   git config --local user.email piyush@rivi.co
-  git config --local user.signingkey B9DDF3C0350F53CE025FC13240B4B24740B7DE0F
+  git config --local user.signingkey DE042B1B56FBD106278C17D9927F7DB60649C8DE
   git config --local commit.gpgsign true
 end

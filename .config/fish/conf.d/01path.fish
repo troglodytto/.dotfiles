@@ -14,3 +14,8 @@ fish_add_path -aU $HOME/.yarn/bin
 fish_add_path -aU /bin
 fish_add_path -aU /usr/bin
 fish_add_path -aU /usr/local/bin
+fish_add_path -aU $HOME/.cabal/bin
+fish_add_path -aU $HOME/.ghcup/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/google-cloud-sdk/path.fish.inc' ]; . '/opt/google-cloud-sdk/path.fish.inc'; end

@@ -1,12 +1,12 @@
 [user]
 	name = Ephemeral Astronaut
 	email = troglodytto@gmail.com
-	signingkey = EC589451D5D29F7B44BC3E3083FDBBCF2BD37181
+	signingkey = 143594127CF2149AE5E73555588B4FA8ADC8E702
 
 [init]
 	defaultBranch = main
 
 [commit]
-	gpgsign = true
+	gpgSign = true
 [core]
 	editor = code
