@@ -2,7 +2,7 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 -- vim.g.tokyonight_style = "night"
 -- vim.g.tokyonight_colors = { bg = '#0000' }
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "nord"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
@@ -110,6 +110,7 @@ lvim.builtin.lualine.style = "lvim"
 -- Additional Plugins
 lvim.plugins = {
   { "folke/tokyonight.nvim" },
+  { 'arcticicestudio/nord-vim' },
   { "ayu-theme/ayu-vim" },
   { "simrat39/rust-tools.nvim" }
 }

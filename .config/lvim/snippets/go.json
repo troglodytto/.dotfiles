@@ -1,0 +1,12 @@
+{
+  "errorlog": {
+    "prefix": "errorlog",
+    "body": ["if err != nil {", "\tlog.Fatal(err)", "}"],
+    "description": "Logs error to console and Quits the Program"
+  },
+  "reterror": {
+    "prefix": "reterror",
+    "body": ["if err != nil {", "\treturn err", "}"],
+    "description": "Logs error to console and Quits the Program"
+  }
+}
