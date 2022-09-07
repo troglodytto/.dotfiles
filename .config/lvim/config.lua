@@ -6,6 +6,9 @@ lvim.colorscheme = "nord"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
+lvim.transparent_window = true
+lvim.builtin.bufferline.options.indicator_icon = nil
+lvim.builtin.bufferline.options.indicator = { style = "icon", icon = "▎" }
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -115,11 +118,12 @@ lvim.plugins = {
   { "simrat39/rust-tools.nvim" }
 }
 
-require('rust-tools').setup({
+local rt = require('rust-tools');
+
+rt.setup({
   tools = { -- rust-tools options
     autoSetHints = true,
     executor = require("rust-tools/executors").termopen,
-    hover_with_actions = true,
     inlay_hints = {
       show_parameter_hints = true,
       parameter_hints_prefix = "",
@@ -133,7 +137,13 @@ require('rust-tools').setup({
           command = "clippy"
         },
       }
-    }
+    },
+    on_attach = function(_, bufnr)
+      -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end
   },
 })
 
