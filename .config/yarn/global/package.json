@@ -3,6 +3,7 @@
     "@angular/cli": "^14.0.6",
     "@nestjs/cli": "^8.2.8",
     "@vue/cli": "^5.0.6",
+    "all-the-package-names": "^2.0.296",
     "create-next-app": "^12.1.6",
     "create-react-app": "^5.0.1",
     "create-vite": "^2.9.4",

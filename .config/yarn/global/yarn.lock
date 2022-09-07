@@ -2188,6 +2188,11 @@ ajv@^6.10.0, ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+all-the-package-names@^2.0.296:
+  version "2.0.296"
+  resolved "https://registry.yarnpkg.com/all-the-package-names/-/all-the-package-names-2.0.296.tgz#53a964f21ee1da8d05966191b1f675d98fc11b31"
+  integrity sha512-jt9iOmnVifX9A6v9O9juAAUyqAzPmIOrkYBznbarjYhJmvpsqwQCxln7Elrz8ADzU8mBeBx+ReydbqwgWToVcA==
+
 amp-message@~0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/amp-message/-/amp-message-0.1.2.tgz#a78f1c98995087ad36192a41298e4db49e3dfc45"
