@@ -1,17 +1,17 @@
 window:
   padding:
-    x: 7
-    y: 7
+    x: 10
+    y: 10
   decorations: full
-  opacity: 1.0
+  opacity: 0.95
 
 scrolling:
   history: 1000
 
 font:
   normal:
-    family: "JetBrainsMono Nerd Font Mono"
-  size: 7
+    family: "Iosevka Nerd Font Mono"
+  size: 10
 
 cursor:
   style:
@@ -22,38 +22,33 @@ cursor:
 key_bindings:
   - { key: V, mods: Alt, action: Paste }
   - { key: C, mods: Alt, action: Copy }
-  - {
-      key: F,
-      mods: Control|Shift,
-      mode: ~Search,
-      action: SearchForward
-    }
+  - { key: F, mods: Control|Shift, mode: ~Search, action: SearchForward }
 
-theme: Nord
+theme: Neon
 colors:
-  # Default colors
+  name: Neon
+  author: ""
   primary:
-    background: '#2E3440'
-    foreground: '#D8DEE9'
-
-  # Normal colors
+    background: "#171717"
+    foreground: "#f8f8f8"
+  cursor:
+    text: "#171717"
+    cursor: "#f8f8f8"
   normal:
-    black: '#3B4252'
-    red: '#BF616A'
-    green: '#A3BE8C'
-    yellow: '#EBCB8B'
-    blue: '#81A1C1'
-    magenta: '#B48EAD'
-    cyan: '#88C0D0'
-    white: '#E5E9F0'
-
-  # Bright colors
+    black: "#171717"
+    red: "#d81765"
+    green: "#97d01a"
+    yellow: "#ffa800"
+    blue: "#16b1fb"
+    magenta: "#ff2491"
+    cyan: "#0fdcb6"
+    white: "#ebebeb"
   bright:
-    black: '#4C566A'
-    red: '#BF616A'
-    green: '#A3BE8C'
-    yellow: '#EBCB8B'
-    blue: '#81A1C1'
-    magenta: '#B48EAD'
-    cyan: '#8FBCBB'
-    white: '#ECEFF4'
+    black: "#38252c"
+    red: "#ff0000"
+    green: "#76b639"
+    yellow: "#e1a126"
+    blue: "#289cd5"
+    magenta: "#ff2491"
+    cyan: "#0a9b81"
+    white: "#f8f8f8"

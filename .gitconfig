@@ -10,3 +10,9 @@
 	gpgSign = true
 [core]
 	editor = code
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.15.0/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.15.0/bin/gh auth git-credential
