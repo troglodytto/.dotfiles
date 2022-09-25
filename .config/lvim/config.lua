@@ -1,12 +1,10 @@
 lvim.log.level = "warn"
 lvim.format_on_save = true
--- vim.g.tokyonight_style = "night"
--- vim.g.tokyonight_colors = { bg = '#0000' }
-lvim.colorscheme = "nord"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 lvim.transparent_window = true
+lvim.colorscheme = "tokyonight-night"
 lvim.builtin.bufferline.options.indicator_icon = nil
 lvim.builtin.bufferline.options.indicator = { style = "icon", icon = "▎" }
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -115,7 +113,7 @@ lvim.plugins = {
   { "folke/tokyonight.nvim" },
   { 'arcticicestudio/nord-vim' },
   { "ayu-theme/ayu-vim" },
-  { "simrat39/rust-tools.nvim" }
+  { "simrat39/rust-tools.nvim" },
 }
 
 local rt = require('rust-tools');

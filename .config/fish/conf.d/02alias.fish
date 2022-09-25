@@ -32,5 +32,5 @@ function decathlon --wraps git --description "Setup the current repo for Decathl
 end
 
 function fish_greeting
-    fortune -a -n 150 | cowsay | lolcat
+    fortune -a -s -n 175 | cowsay | lolcat
 end
