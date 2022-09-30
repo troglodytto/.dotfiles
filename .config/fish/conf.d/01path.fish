@@ -1,5 +1,3 @@
-# set HOME "/home/(whoami)"
-
 set -gx ANDROID_HOME $HOME/Android/Sdk
 set -gx JAVA_HOME $HOME/.sdkman/candidates/java/current/
 set -gx FZF_DEFAULT_COMMAND 'rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,target/*}"'
