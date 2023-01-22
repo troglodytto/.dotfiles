@@ -2,7 +2,7 @@ abbr --add cpoy 'xclip -selection c'
 abbr --add pasta 'xclip -selection c -o'
 abbr --add python python3
 abbr --add pip pip3
-abbr --add mysql 'mysql -h localhost -uroot -p'
+abbr --add mysql 'mysql -h localhost -uroot -p -P 3306 --protocol=tcp'
 abbr --add psql 'psql -h localhost -U postgres -W'
 abbr --add redis 'redis-cli -h localhost'
 abbr --add vim lvim
