@@ -24,9 +24,11 @@ fish_add_path -aU $HOME/.ghcup/bin
 fish_add_path -aU $PYENV_ROOT/bin
 fish_add_path -aU /opt/flutter/bin
 fish_add_path -aU /usr/local/go/bin/
-fish_add_path -aU (pyenv root)/shims
+fish_add_path -aU $HOME/.pub-cache/bin
+fish_add_path -aU $HOME/.zig
+fish_add_path -aU /home/linuxbrew/.linuxbrew/bin
 
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+source ~/.asdf/asdf.fish
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/google-cloud-sdk/path.fish.inc' ]
