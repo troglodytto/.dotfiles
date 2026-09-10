@@ -1,0 +1,11 @@
+format = """[$directory$rust$elixir$nodejs$python$haskell$package$git_branch$git_status$character](bold green)"""
+
+scan_timeout = 10
+add_newline = false
+
+[character]
+success_symbol = "[λ](bold green)"
+error_symbol = "[λ](bold red)"
+
+[git_branch]
+symbol = " "

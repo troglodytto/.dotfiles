@@ -1,0 +1,16 @@
+[window]
+padding = { x = 24, y = 24 }
+opacity = 0.96
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Mono" }
+
+[colors.bright]
+black = "#7f7f7f"
+red = "#ff5f5f"
+green = "#5fff87"
+yellow = "#ffd75f"
+blue = "#5fafff"
+magenta = "#ff5fff"
+cyan = "#5fffff"
+white = "#ffffff"
